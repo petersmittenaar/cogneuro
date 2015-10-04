@@ -10,14 +10,14 @@ Each element of the struct has the following fields (n indicates number of games
 * gender          string                          male/female
 * education       string                          one of 4 levels of attained education
 * devicetype      string                          'iOS' or 'other'. iOS includes iPod, iPad, iPhone. Abstracted from more specific info to retain privacy
-* appversion      string or NaN                   Can be one of '1-0', '2-0', '01/04/2014', '01/02/2014'. Important for interpreting the first column of dat.data
+* appversion      string                          Can be one of '1-0', '2-0', '01/04/2014', '01/02/2014'. Important for interpreting the first column of dat.data
 * timesPlayed     1 x n array                     how many times the user had *initiated* a Fruit Tap game at the time of submission of each block (e.g. if this array is [1 3], then the second game was initiated but never sent to our servers)
 * timesubmitted   cell array of strings           each cell contains a datestamp (dd/mm/yyyy) indicating when the record was received
 * data            cell array of matrices          each element contains a 32-by-7 matrix.
 
 ## Data columns
-1. In version 1, 0: trial was 'Unprepared'; 1: 'Prepared' but unknown which side was 'glowing'. In version >1, 0: trial was 'Unprepared'; 2: left fruit was 'glowing'; 3: right fruit was 'glowing'.
-2. 0: Go trial, neither fruit went bad; 1: Strop trial, fruit on right side went bad; 2: Stop trial, fruit on left side went bad
+1. In version 1, 0: trial was 'Unprepared'; 1: 'Prepared' but unknown which side was 'glowing'. In any version other than 1, 0: trial was 'Unprepared'; 2: left fruit was 'glowing'; 3: right fruit was 'glowing'.
+2. 0: Go trial, neither fruit went bad; 1: Stop trial, fruit on right side went bad; 2: Stop trial, fruit on left side went bad
 3. number of milliseconds between the fruit turning bad and *the center point of the reaction time window* (which is at 650 ms after the fruit starts falling)
 4. number of milliseconds between the fruit starting to fall, and the first time the user pressed the **left** side of the screen
 5. number of milliseconds between the fruit starting to fall, and the first time the user pressed the **right** side of the screen
