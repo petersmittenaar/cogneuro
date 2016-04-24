@@ -1,6 +1,6 @@
 # Fruit Tap data
 ## Source
-These data were collected as part of The Great Brain Experiment. The data presented here are from the game 'Fruit Tap' or 'How Impulsive Am I?' A total of 71981 sessions (i.e. sets of 32 trials) were collected between March 11th 2012 and April 3rd 2014 from 29740 participants.
+These data were collected as part of The Great Brain Experiment. The data presented here are from the game 'Fruit Tap' or 'How Impulsive Am I?' A total of 71981 sessions (i.e. sets of 32 trials) were collected between March 11th 2012 and April 3rd 2014 from 29740 participants. Feel free to download the data, analyse it, publish results and refutations, and so on. The paper to reference is [Smittenaar et al. (2015)](http://dx.doi.org/10.1371/journal.pone.0140383)
 ## Format
 The data are stored as a single Matlab struct variable. Each element of the struct (e.g. dat(1)) represents a single participant.
 To load this struct using Python's scipy package see [here](http://docs.scipy.org/doc/scipy/reference/tutorial/io.html#matlab-structs).
@@ -25,5 +25,5 @@ Each element of the struct has the following fields (n indicates number of games
 7. whether or not the player successfully completed the trial (successful Go or Stop)
 
 ## Further details
-See the paper published in PLoS ONE for further experimental details, or get in touch at peter@petersmittenaar.com.
+See the [paper published in PLoS ONE](http://dx.doi.org/10.1371/journal.pone.0140383) for further experimental details, or get in touch at peter@petersmittenaar.com.
 
